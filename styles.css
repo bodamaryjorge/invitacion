@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 500px; /* Ajusta este valor según el diseño */
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    background: url('images/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    background-size: auto;
+}
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenido {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+.contenido h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.legend {
+  position: absolute;
+  bottom: 5%; /* Mueve la leyenda a la parte inferior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%);
+  width: 40%; /* Ajusta el ancho para mejor visibilidad */
+  background-color: rgba(226, 226, 226, 0.7);
+  color: rgb(62, 62, 62);
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif !important;
+  font-size:12px;
+  z-index: 10;
+}
+
+
+.contenido p {
+    font-size: 24px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.carousel-container {
+  
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  margin-bottom:50px;
+  display: flex;
+  gap: 15px; /* Espaciado entre elementos */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+  -ms-overflow-style: none; /* Oculta la barra en IE y Edge */
+  padding: 10px;
+}
+
+.hotel-card {
+  flex: 0 0 80%; /* Permite que se vean los laterales */
+  max-width: 80%;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hotel-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hotel-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.hotel-card h3 a {
+  color: black !important;
+  text-decoration: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Espaciado entre botones */
+  margin-top: 30px;
+}
+
+/* Estilo base de los botones */
+.btn {
+  background-color: #E6D5BE; /* Marrón claro */
+  color: #5A3E2B; /* Marrón oscuro */
+  border: 2px solid #B19072; /* Borde marrón más oscuro */
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Calibri', sans-serif;
+  border-radius: 25px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover para los botones */
+.btn:hover {
+  background-color: #C8A67D; /* Marrón más oscuro en hover */
+  color: #FFF;
+  border-color: #8B6C50;
+  transform: scale(1.05);
+}
+
+/* Efecto de presionado */
+.btn:active {
+  transform: scale(0.98);
+}
+.separator {
+  width: 100%;
+  height: 32vw; /* Ajusta la altura según el diseño */
+  background: url('images/separator.png') no-repeat center center;
+  background-size: contain; /* Se adapta sin distorsionar */
+  margin-top:-15px;
+  margin-left:5%;
+  border: none;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.flight-card img {
+  width: 80%;
+  height: 250px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.flight-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.airline-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.airline-logos img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease-in-out;
+  animation: resaltarBorde 3s infinite ease-in-out; /* Se repite cada 3 segundos */
+}
+
+@keyframes resaltarBorde {
+  0% { border: 0.5px solid rgba(0, 0, 0, 0.321); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
+  50% { border: 0.5px solid rgba(0, 0, 0, 0.6); box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); } /* Oscurece el borde */
+  100% { border: 0.5px solid rgba(0, 0, 0, 0.2); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
+}
+
+.legenddos {
+  position: relative;
+  bottom: 5%; /* Mueve la leyenda a la parte inferior */
+  left: 20%; /* Centra horizontalmente */
+  transform: translateX(-50%);
+  width: 40%; /* Ajusta el ancho para mejor visibilidad */
+  background-color: rgba(226, 226, 226, 0.7);
+  color: rgb(62, 62, 62);
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif !important;
+  font-size:12px;
+  z-index: 10;
+}
+.flights-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flights {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.flight-card {
+  flex: 0 0 85%;
+  max-width: 85%;
+  height: 420px;
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.flight-card:active {
+  background-color: #f0f0f0;
+}
+
+.flight-card h4{
+  margin-top: 5px;
+}
+
+.prueba{
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.titulo-hoteles {
+  font-size: 32px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.titulo-hoteles2 {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 700;
+  color: rgb(98, 98, 98);
+  text-align: center;
+}
+
+.fotoilus {
+  margin-bottom: -50px;
+}
+
+.mapa {
+  width: 100%;
+  margin-bottom: -20px;
+}
+
+
