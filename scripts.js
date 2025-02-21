@@ -53,23 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-window.onload = function () {
-    if ('caches' in window) {
-        caches.keys().then((names) => {
-            names.forEach((name) => {
-                caches.delete(name);
-            });
-        });
-    }
-
-    let url = window.location.href;
-    if (!url.includes('nocache=')) {
-        let newUrl = url + (url.includes('?') ? '&' : '?') + 'nocache=' + new Date().getTime();
-        window.location.href = newUrl;
-    }
-};
-
-
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("active");
 }
@@ -88,4 +71,9 @@ document.querySelectorAll(".menu a").forEach(link => {
     link.addEventListener("click", function() {
         document.getElementById("menu").classList.remove("active");
     });
+});
+
+
+window.addEventListener("load", function() {
+    document.body.classList.add("loaded");
 });
