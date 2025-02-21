@@ -72,8 +72,3 @@ document.querySelectorAll(".menu a").forEach(link => {
         document.getElementById("menu").classList.remove("active");
     });
 });
-
-
-window.addEventListener("load", function() {
-    document.body.classList.add("loaded");
-});
