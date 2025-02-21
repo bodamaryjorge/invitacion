@@ -68,3 +68,24 @@ window.onload = function () {
         window.location.href = newUrl;
     }
 };
+
+
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+
+window.addEventListener("scroll", function() {
+    var topBar = document.getElementById("topBar");
+    if (window.scrollY > 50) {
+        topBar.classList.add("scrolled");
+    } else {
+        topBar.classList.remove("scrolled");
+    }
+});
+
+// Cerrar menú al hacer clic en un enlace
+document.querySelectorAll(".menu a").forEach(link => {
+    link.addEventListener("click", function() {
+        document.getElementById("menu").classList.remove("active");
+    });
+});

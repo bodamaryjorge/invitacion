@@ -9,14 +9,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="container">
-        <img class="fotoilus" src="images/ilustracion.png" alt="Boda Mar & Jorge">
+    <!-- Barra superior fija con botón de menú -->
+    <div class="top-bar" id="topBar">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </div>
 
-    <div class="separator"></div>
+    
 
-    <h3 class="titulo-hoteles">Hoteles cercanos</h3>
+    <div id="invitacion" class="container">
+        <img class="fotoilus" src="images/ilustracion.png" alt="Boda Mar & Jorge">
+    </div>
+    <!-- Menú lateral -->
+    <div class="menu" id="menu">
+        <a href="#invitacion">- Invitación</a>
+        <a href="#hoteles">- Hoteles</a>
+        <a href="#aerolineas">- Aerolíneas</a>
+    </div>
+    <div id="hoteles" class="separator"></div>
+    <h3 class="titulo-hoteles">Alojamientos cercanos</h3>
     <div class="carousel-container">
         <div class="carousel" id="carousel">
             <div class="hotel-card">
@@ -78,6 +88,7 @@
                 <p>Ubicación: Martos, Jaén</p>
             </div>
             <div class="hotel-card">
+                <span class="reservado-badge">RESERVADO</span> <!-- BADGE RESERVADO -->
                 <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
                     <img src="https://lh5.googleusercontent.com/p/AF1QipN50arhHK9XvD6UAoJb7sALW2JVei6oC1uRFDNW=w408-h306-k-no" alt="Casa Rural Mañanas Felices">
                 </a>
@@ -85,30 +96,37 @@
                 <p>Ubicación: Martos, Jaén</p>
             </div>
         </div>
-        <span class="legend">Selecciona tu preferido</span>
     </div>
-    
+    <div class="reserva-box">
+        <h3 class="titulo-hoteles3">Pasos para hacer tu reserva:</h3>
+        <ul>
+            <li>Encuentra tu opción favorita.</li>
+            <li>Haz click para obtener información detallada.</li>
+            <li>Llamar y comentar que la reserva es para la boda de Jorge y Mar</li>
+        </ul>  
+    </div>  
     <h3 class="titulo-hoteles2">En caso de completarse el aforo de los anteriores hoteles, recomendamos alojarse en Jaén capital</h3>
     <img class="mapa" src="images/mapa.png"></img>
-    <div class="separator"></div>
+    <div id="aerolineas" class="separator"></div>
     <h3 class="prueba">Desplazamientos recomendados</h3>
     <div class="flights-container">
         <div class="flights" id="flights">
             <div class="flight-card">
-                <h3>Desde Granada</h3>
-                <a class="mapa2" href="https://maps.app.goo.gl/qNPAYTs4uE9fA5H36">
-                    <img src="images/granada.png"></img>
+                <h3>Cómo llegar desde Granada: </h3>
+                <a href="https://maps.app.goo.gl/qNPAYTs4uE9fA5H36">
+                    <img class="mapa2" src="images/granada.png"></img>
                 </a>
-                <h4>Aerolíneas recomendadas</h4>
+                <p>Aerolíneas que recomendamos desde Granada</p>
                 <div class="airline-logos">
                     <a href="https://www.bintercanarias.com/es"><img src="images/binter.png" alt="Binter"></a>
                     <a href="https://www.vueling.com/es"><img src="images/vueling.png" alt="Vueling"></a>
                 </div>
             </div>
             <div class="flight-card">
-                <h3>Desde Málaga</h3>
-                <a href="https://maps.app.goo.gl/cU4ZSJuwfAnQ1VKF8"><img src="images/malaga.png"></img></a>
-                <h4>Aerolíneas recomendadas</h4>
+                <h3>Cómo llegar desde Málaga</h3>
+                <a href="https://maps.app.goo.gl/cU4ZSJuwfAnQ1VKF8">
+                    <img class="mapa2" src="images/malaga.png"></img></a>
+                <p>Aerolíneas que recomendamos desde Málaga</p>
                 <div class="airline-logos">
                     <a href="https://www.vueling.com/es"><img src="images/vueling.png" alt="Vueling"></a>
                     <a href="https://www.aireuropa.com/es/es/home"><img src="images/air-europe.png" alt="Air Europa"></a>
@@ -117,9 +135,10 @@
                 </div>
             </div>
             <div class="flight-card">
-                <h3>Desde Madrid</h3>
-                <a href="https://maps.app.goo.gl/AYcRPLnz5UXxnZSG7"><img src="images/madrid.png"></img></a>
-                <h4>Aerolíneas Recomendadas</h4>
+                <h3>Cómo llegar desde Madrid</h3>
+                <a href="https://maps.app.goo.gl/AYcRPLnz5UXxnZSG7">
+                    <img class="mapa2" src="images/madrid.png"></img></a>
+                <p>Aerolíneas que recomendamos desde Madrid</p>
                 <div class="airline-logos">
                     <a href="https://www.bintercanarias.com/es"><img src="images/binter.png" alt="Binter"></a>
                     <a href="https://www.aireuropa.com/es/es/home"><img src="images/air-europe.png" alt="Air Europa"></a>
@@ -128,9 +147,21 @@
                 </div>
             </div>
         </div>
-        <span class="legenddos">Pincha en las imágenes para más información</span>
     </div>
-    
+    <div class="reserva-box">
+        <h3 class="titulo-hoteles3">Información relevante:</h3>
+        <ul>
+            <li>Consulta la ruta haciendo clic en la imagen del mapa.</li>
+            <li>Accede directamente a la web de la aerolínea desde los iconos.</li>
+            <li>Reserva tu vuelo.</li>
+        </ul>  
+    </div> 
+    <div class="separator"></div>
+    <div class="foto-container">
+        <img src="images/2.JPG" alt="Pareja" class="foto-pareja">
+        <p class="mensaje">Muy pronto compartiremos más información</p>
+        <p class="mensaje">¡Estad atentos!</p>
+    </div>
     <script src="scripts.js"></script>
 
     <footer class="footer">
