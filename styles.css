@@ -15,7 +15,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     font-family: 'Dancing Script', cursive;
-    background: url('https://github.com/bodamaryjorge/invitacion/blob/main/images/fondo.png?raw=true') no-repeat center center fixed;
+    background: url('images/fondo.webp') no-repeat center center fixed;
     background-size: cover;
     background-size: auto;
     scroll-behavior: smooth;
