@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <title>Boda Mar & Jorge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>    
+    <!-- Barra superior fija con botón de menú -->
+    <div class="top-bar2" id="topBar">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+    <!-- Menú lateral -->
+    <div class="menu" id="menu">
+        <a href="index.html#invitacion">- Invitación</a>
+        <a href="index.html#asistencia">- Asistencia</a>
+        <a href="#hoteles">- Hoteles</a>
+        <a href="#aerolineas">- Aerolíneas</a>
+    </div>
+    <div id="espaciado" class="espaciado"></div>
+    <h3 class="titulo-hoteles">Alojamientos cercanos</h3>
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <div class="hotel-card">
+                <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
+                    <img src="https://www.complejotwist.com/wp-content/uploads/2024/04/complejo-twist-1536x1152.jpg" alt="Hotel Twist">
+                </a>
+                <h3><a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">Hotel Twist</a></h3>
+                <p>Ubicación: Torredonjimeno, Jaén</p>
+            </div>
+            <div class="hotel-card">
+                <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/151072814.jpg?k=05f06742f883a1100633e1fc65bf7d3d70ec49b94b5c125a10140dc579bf74bb&o=&hp=1" alt="Hotel Fernando IV">
+                </a>
+                <h3><a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">Hotel Fernando IV</a></h3>
+                <p>Ubicación: Martos, Jaén</p>
+            </div>
+            <div class="hotel-card">
+                <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
+                    <img src="https://multimedia.andalucia.org/content_images/main_image_52036.jpeg?_gl=1*5dkhet*_gcl_au*MTE0NzA0NDIzNC4xNzM4MzE3Nzcw*_ga*MjA2NDQ2MzM5Ny4xNzM4MzE3Nzcw*_ga_J2FR097LYD*MTczODMxNzc2OS4xLjAuMTczODMxNzc2OS42MC4wLjA." alt="Hotel Hidalgo Martos">
+                </a>
+                <h3><a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">Hotel Hidalgo Martos</a></h3>
+                <p>Ubicación: Martos, Jaén</p>
+            </div>
+            <div class="hotel-card">
+                <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipNB0HUA_QWqoKmcD2JGTiGDrx6OUu8FI62Rx1YX=s1360-w1360-h1020-rw" loading="lazy" alt="Casa Rural Mañanas Felices">
+                </a>
+                <h3><a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">Vivienda Rural Las Viñas</a></h3>
+                <p>Ubicación: Martos, Jaén</p>
+            </div>
+            <div class="hotel-card">
+                <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
+                    <img src="https://www.hoteltorrezaf.com/wp-content/uploads/2021/11/galeria-inicio-1-1630x860.jpg" loading="lazy" alt="Hotel Torrezaf">
+                </a>
+                <h3><a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">Hotel Torrezaf</a></h3>
+                <p>Ubicación: Torredelcampo, Jaén</p>
+            </div>
+    
+            <div class="hotel-card">
+                <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipMGAEnqqEWTCAogGEpUjig04XTTJbSaXYgmnUAb=w408-h272-k-no" loading="lazy" alt="Apartamentos Llanete">
+                </a>
+                <h3><a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">Apartamentos Llanete</a></h3>
+                <p>Ubicación: Martos, Jaén</p>
+            </div>
+
+            <div class="hotel-card">
+                <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
+                    <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=8rfuifIIQINWVzpVs-KAfQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=214.75964&pitch=0&thumbfov=100" loading="lazy" alt="Estudio San Amador">
+                </a>
+                <h3><a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">Estudio San Amador</a></h3>
+                <p>Ubicación: Martos, Jaén</p>
+            </div>
+            <div class="hotel-card">
+                <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
+                    <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=8rfuifIIQINWVzpVs-KAfQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=214.75964&pitch=0&thumbfov=100" loading="lazy" alt="Sweet Home">
+                </a>
+                <h3><a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">Sweet Home</a></h3>
+                <p>Ubicación: Martos, Jaén</p>
+            </div>
+            <div class="hotel-card">
+                <span class="reservado-badge">RESERVADO</span> <!-- BADGE RESERVADO -->
+                <a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipN50arhHK9XvD6UAoJb7sALW2JVei6oC1uRFDNW=w408-h306-k-no" loading="lazy" alt="Casa Rural Mañanas Felices">
+                </a>
+                <h3><a href="https://maps.app.goo.gl/pdA5hvvvTXwvv6zS7" target="_blank">Casa Rural Mañanas Felices</a></h3>
+                <p>Ubicación: Martos, Jaén</p>
+            </div>
+        </div>
+    </div>
+    <div class="reserva-box">
+        <h3 class="titulo-hoteles3">Pasos para hacer tu reserva:</h3>
+        <ul>
+            <li>Encuentra tu opción favorita.</li>
+            <li>Haz click para obtener información detallada.</li>
+            <li>Llamar y comentar que la reserva es para la boda de Jorge y Mar</li>
+        </ul>  
+    </div>  
+    <h3 class="titulo-hoteles2">En caso de completarse el aforo de los anteriores hoteles, recomendamos alojarse en Jaén capital</h3>
+    <img class="mapa" loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/mapa.png?raw=true"></img>
+    <div id="aerolineas" class="separator"></div>
+    <h3 class="prueba">Desplazamientos recomendados</h3>
+    <div class="flights-container">
+        <div class="flights" id="flights">
+            <div class="flight-card">
+                <h3>Cómo llegar desde Granada: </h3>
+                <a href="https://maps.app.goo.gl/qNPAYTs4uE9fA5H36">
+                    <img class="mapa2" loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/granada.png?raw=true"></img>
+                </a>
+                <p>Aerolíneas que recomendamos desde Granada</p>
+                <div class="airline-logos">
+                    <a href="https://www.bintercanarias.com/es"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/binter.png?raw=true" alt="Binter"></a>
+                    <a href="https://www.vueling.com/es"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/vueling.png?raw=true" alt="Vueling"></a>
+                </div>
+            </div>
+            <div class="flight-card">
+                <h3>Cómo llegar desde Málaga</h3>
+                <a href="https://maps.app.goo.gl/cU4ZSJuwfAnQ1VKF8">
+                    <img class="mapa2" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/malaga.png?raw=true"></img></a>
+                <p>Aerolíneas que recomendamos desde Málaga</p>
+                <div class="airline-logos">
+                    <a href="https://www.vueling.com/es"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/vueling.png?raw=true" alt="Vueling"></a>
+                    <a href="https://www.aireuropa.com/es/es/home"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/air-europe.png?raw=true" alt="Air Europa"></a>
+                    <a href="https://www.iberia.com/es/buscador-vuelos/"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/iberia.jpg?raw=true" alt="Iberia"></a>
+                    <a href="https://www.ryanair.com/content/ryanair/es/es.html"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/ryanair.png?raw=true" alt="Ryanair"></a>  
+                </div>
+            </div>
+            <div class="flight-card">
+                <h3>Cómo llegar desde Madrid</h3>
+                <a href="https://maps.app.goo.gl/AYcRPLnz5UXxnZSG7">
+                    <img class="mapa2" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/madrid.png?raw=true"></img></a>
+                <p>Aerolíneas que recomendamos desde Madrid</p>
+                <div class="airline-logos">
+                    <a href="https://www.bintercanarias.com/es"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/binter.png?raw=true" alt="Binter"></a>
+                    <a href="https://www.aireuropa.com/es/es/home"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/air-europe.png?raw=true" alt="Air Europa"></a>
+                    <a href="https://www.iberia.com/es/buscador-vuelos/"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/iberia.jpg?raw=true" alt="Iberia"></a>
+                    <a href="https://www.ryanair.com/content/ryanair/es/es.html"><img loading="lazy" src="https://github.com/bodamaryjorge/invitacion/blob/main/images/ryanair.png?raw=true" alt="Ryanair"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reserva-box">
+        <h3 class="titulo-hoteles3">Información relevante:</h3>
+        <ul>
+            <li>Consulta la ruta haciendo clic en la imagen del mapa.</li>
+            <li>Accede directamente a la web de la aerolínea desde los iconos.</li>
+            <li>Reserva tu vuelo.</li>
+        </ul>  
+    </div> 
+    <script src="scripts.js"></script>
+    <script>
+        function hideLoader() {
+            document.getElementById("loader").style.display = "none";
+        }
+        // Cuando la web termine de cargar, oculta el loader
+        window.onload = hideLoader;
+
+        // Si la web tarda demasiado, forzar ocultar el loader después de 5 segundos
+        setTimeout(hideLoader, 5000);
+    </script>
+    <footer class="footer">
+        <p>&copy; 2025 Boda Mar & Jorge | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

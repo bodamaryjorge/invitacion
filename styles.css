@@ -129,6 +129,27 @@ html, body {
   text-decoration: none;
 }
 
+.btn-classic {
+  background-color: rgba(83, 70, 63, 0.9);
+  color: white;
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 2px solid white;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-classic:hover {
+  background-color:  rgba(83, 70, 63, 0.633);
+  color: rgba(83, 70, 63, 0.053);
+  transform: scale(1.05);
+}
+
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -164,6 +185,16 @@ html, body {
 .btn:active {
   transform: scale(0.98);
 }
+.separator_ini {
+  width: 100%;
+  height: 100px; /* Ajusta la altura según el diseño */
+  background: url('https://github.com/bodamaryjorge/invitacion/blob/main/images/separator.png?raw=true') no-repeat center center;
+  background-size: contain; /* Se adapta sin distorsionar */
+  margin-top:-45px;
+  margin-left:5%;
+  border: none;
+}
+
 .separator {
   width: 100%;
   height: 100px; /* Ajusta la altura según el diseño */
@@ -286,6 +317,7 @@ html, body {
   font-size: 32px;
   margin-top: -10px;
   margin-bottom: 15px;
+  color: rgb(57, 57, 57);
   font-weight: 700;
   text-align: center;
 }
@@ -293,6 +325,18 @@ html, body {
   font-size: 20px;
   margin: 20px;
   font-weight: 700;
+  color: rgb(98, 98, 98);
+  text-align: center;
+}
+.titulo-hoteles4 {
+  font-size: 22px;
+  color: rgb(98, 98, 98);
+  margin: 10px;
+  text-align: center;
+}
+.titulo-hoteles5 {
+  font-size: 22px;
+  margin-bottom: 20px;
   color: rgb(98, 98, 98);
   text-align: center;
 }
@@ -313,6 +357,7 @@ html, body {
 }
 .fotoilus {
   margin-bottom: -100px;
+  width: 100%;
 }
 
 .mapa {
@@ -360,6 +405,28 @@ html, body {
   color: rgb(98, 98, 98);
   margin-top: 15px;
 }
+.espaciado {
+  height: 120px; /* Espacio para el menú lateral */
+}
+.espaciado2 {
+  height: 20px; /* Espacio para el menú lateral */
+}
+
+.top-bar2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(83, 70, 63, 0.9); /* Fondo marrón desde el inicio */
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
 
 
 /* Menu superior */
