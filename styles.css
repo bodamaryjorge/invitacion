@@ -607,13 +607,6 @@ section {
   padding: 20px 0;
 }
 
-.timeline-marker {
-  width: 40px;       /* ancho de la raya */
-  height: 3px;       /* altura pequeña para que sea una raya fina */
-  background-color: #929292;
-  margin: 20px auto; /* margen arriba y abajo + centrado horizontal */
-  border-radius: 2px;
-}
 .timeline-marker-right {
   width: 40px;     /* ancho total */
   height: 3px;
