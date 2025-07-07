@@ -599,6 +599,15 @@ section {
   margin-bottom: 50px;
   line-height: 1.8;
 }
+.textoinvi2 {
+  font-family: 'Hoefler Text';
+  font-style: italic;  
+  color: #2d1f1a;
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.8;
+}
+
 
 .timeline {
   position: relative;
