@@ -14,7 +14,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Hoefler Text';
+    font-style: italic;
     background: url('images/fondo.webp') no-repeat center center fixed;
     background-size: cover;
     background-size: auto;
@@ -144,11 +145,10 @@ html, body {
 }
 
 .btn-classic:hover {
-  background-color:  rgba(83, 70, 63, 0.633);
-  color: rgba(83, 70, 63, 0.053);
+  background-color:  rgba(83, 70, 63, 0.714);
+  color: white;
   transform: scale(1.05);
 }
-
 
 .btn-container {
   display: flex;
@@ -184,6 +184,27 @@ html, body {
 /* Efecto de presionado */
 .btn:active {
   transform: scale(0.98);
+}
+.separator_ini3 {
+  width: 80%;
+  height: 100px; /* Ajusta la altura según el diseño */
+  background: url('https://github.com/bodamaryjorge/invitacion/blob/main/images/separator.png?raw=true') no-repeat center center;
+  background-size: contain; /* Se adapta sin distorsionar */
+  margin-top:20px;
+  margin-bottom: 20px;
+  margin-left:5%;
+  border: none;
+}
+
+.separator_ini2 {
+  width: 80%;
+  height: 100px; /* Ajusta la altura según el diseño */
+  background: url('https://github.com/bodamaryjorge/invitacion/blob/main/images/separator.png?raw=true') no-repeat center center;
+  background-size: contain; /* Se adapta sin distorsionar */
+  margin-top: -35px;
+  margin-bottom: 20px;
+  margin-left:5%;
+  border: none;
 }
 .separator_ini {
   width: 100%;
@@ -310,41 +331,51 @@ html, body {
 .prueba{
   font-size: 30px;
   margin-bottom: 30px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 .titulo-hoteles {
+  font-family: 'Hoefler Text';
+  font-style: italic;  
   font-size: 32px;
   margin-top: -10px;
   margin-bottom: 15px;
   color: rgb(57, 57, 57);
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 .titulo-hoteles2 {
+  font-family: 'Hoefler Text';
+  font-style: italic;  
   font-size: 20px;
   margin: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: rgb(98, 98, 98);
   text-align: center;
 }
 .titulo-hoteles4 {
-  font-size: 22px;
+  font-family: 'Hoefler Text';
+  font-style: italic;  
+  font-size: 20px;
   color: rgb(98, 98, 98);
   margin: 10px;
   text-align: center;
 }
 .titulo-hoteles5 {
+  font-family: 'Hoefler Text';
+  font-style: italic;  
   font-size: 22px;
   margin-bottom: 20px;
   color: rgb(98, 98, 98);
   text-align: center;
 }
 .titulo-hoteles3 {
+  font-family: 'Hoefler Text';
+  font-style: italic;  
   font-size: 20px;
   margin-top: -15px;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 .reserva-box {
@@ -357,6 +388,16 @@ html, body {
 }
 .fotoilus {
   margin-bottom: -100px;
+  width: 100%;
+}
+
+.fotoini {
+  width: 100%;
+}
+
+.invitacion2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -401,10 +442,20 @@ html, body {
 }
 
 .mensaje {
-  font-size: 22px;
+  margin: 7px;
+  font-size: 20px;
   color: rgb(98, 98, 98);
   margin-top: 15px;
 }
+.mensaje2 {
+  margin: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(98, 98, 98);
+  margin-top: 15px;
+  font-family: 'Calibri';
+}
+
 .espaciado {
   height: 120px; /* Espacio para el menú lateral */
 }
@@ -537,4 +588,121 @@ section {
 /* Ocultar el loader cuando la web está cargada */
 .loaded #loader {
   display: none;
+}
+
+.textoinvi {
+  font-family: 'Hoefler Text';
+  font-style: italic;  
+  color: #2d1f1a;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline-marker {
+  width: 40px;       /* ancho de la raya */
+  height: 3px;       /* altura pequeña para que sea una raya fina */
+  background-color: #333;
+  margin: 20px auto; /* margen arriba y abajo + centrado horizontal */
+  border-radius: 2px;
+}
+.timeline-marker-right {
+  width: 40px;     /* ancho total */
+  height: 3px;
+  background: linear-gradient(to right, transparent 50%, #333 50%);
+  margin: 20px auto; /* margen arriba y abajo + centrado horizontal */
+  border-radius: 2px;
+}
+.timeline-marker-left {
+  width: 40px;     /* ancho total */
+  height: 3px;
+  background: linear-gradient(to left, transparent 50%, #333 50%);
+  margin: 20px auto; /* margen arriba y abajo + centrado horizontal */
+  border-radius: 2px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #ccc;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.event {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Alineación izquierda: todo pegado a la izquierda */
+.event.left {
+  text-align: center;
+  margin-left: -45%;
+  margin-top: -5%;
+  width: 100%; /* ocupa todo el ancho */
+}
+
+/* Alineación derecha: todo pegado a la derecha */
+.event.right {
+  align-items: flex-end;
+  text-align: center;
+  margin-left: 20%;
+  width: 100%; /* ocupa todo el ancho */
+}
+
+.event-text {
+  max-width: 220px;
+  font-style: italic;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  margin-left: 10px
+}
+.event-text-right {
+  max-width: 220px;
+  font-style: italic;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  margin-left: 10px
+}
+.event-text-left {
+  max-width: 220px;
+  font-style: italic;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  margin-left: 10px
+}
+
+/* Imágenes ajustadas al borde */
+.event img {
+  max-width: 220px;
+  height: auto;
+  margin-top: -80px;
+}
+
+.note {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+.event .imagenbus {
+  position: relative;
+  left: -25px; /* desplaza la imagen 10px a la izquierda */
+  width: 70px; /* Ajusta el tamaño según necesites */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 10px;
 }
