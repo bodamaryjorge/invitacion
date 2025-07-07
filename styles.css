@@ -662,27 +662,20 @@ section {
   margin-left: 25%;
   width: 100%; /* ocupa todo el ancho */
 }
-
-.event-text {
-  max-width: 220px;
-  font-style: italic;
-  line-height: 1.7;
-  margin-top: 0.5rem;
-  margin-left: 10px
-}
 .event-text-right {
   max-width: 220px;
   font-style: italic;
   line-height: 1.7;
   margin-top: 0.5rem;
-  margin-left: 10px
+  margin-left: 5%;
+  text-align: center; /* Alineación del texto a la izquierda */
 }
 .event-text-left {
   max-width: 220px;
   font-style: italic;
   line-height: 1.7;
   margin-top: 0.5rem;
-  margin-left: 10px
+  text-align: center;
 }
 
 /* Imágenes ajustadas al borde */
@@ -700,9 +693,8 @@ section {
   padding: 0 1rem;
 }
 .event .imagenbus {
-  position: relative;
-  left: -25px; /* desplaza la imagen 10px a la izquierda */
-  width: 70px; /* Ajusta el tamaño según necesites */
+  margin-right: 30px;
+  width: 60px; /* Ajusta el tamaño según necesites */
   height: auto; /* Mantiene la proporción de la imagen */
   margin-bottom: 10px;
 }
