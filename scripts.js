@@ -72,3 +72,24 @@ document.querySelectorAll(".menu a").forEach(link => {
         document.getElementById("menu").classList.remove("active");
     });
 });
+
+(function () {
+  const REFRESH_LIMIT = 1;
+  const DELAY = 3000; // 10 segundos en milisegundos
+  const STORAGE_KEY = 'doubleRefreshCount';
+
+  // Leer cuántas veces se ha refrescado
+  let refreshCount = parseInt(localStorage.getItem(STORAGE_KEY)) || 0;
+
+  // Si aún no ha hecho los 2 refreshes
+  if (refreshCount < REFRESH_LIMIT) {
+    refreshCount++;
+    localStorage.setItem(STORAGE_KEY, refreshCount);
+    setTimeout(() => {
+      location.reload();
+    }, DELAY);
+  } else {
+    // Limpiar después del segundo refresh
+    localStorage.removeItem(STORAGE_KEY);
+  }
+})();
