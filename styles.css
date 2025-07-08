@@ -344,6 +344,16 @@ html, body {
   font-weight: 500;
   text-align: center;
 }
+.titulo-hoteles6{
+  font-family: 'Hoefler Text';
+  font-style: italic;  
+  font-size: 32px;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  color: rgb(57, 57, 57);
+  font-weight: 500;
+  text-align: center;
+}
 .titulo-hoteles2 {
   font-family: 'Hoefler Text';
   font-style: italic;  
@@ -403,7 +413,7 @@ html, body {
 
 .mapa {
   width: 100%;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
   max-width: 500px;
 }
 .mapa2 {
