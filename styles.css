@@ -710,3 +710,101 @@ section {
   height: auto; /* Mantiene la proporción de la imagen */
   margin-bottom: 10px;
 }
+
+.timelineinfo {
+  position: relative;
+  margin: 20px auto;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.timelineinfo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+.timelineinfo-item {
+  position: relative;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timelineinfo-marker {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 3px solid #444;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timelineinfo-content {
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.timelineinfo-content h4 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.timelineinfo-content p {
+  text-align: center;
+  line-height: 1.8;
+  margin: 4px 0;
+}
+.timelineinfo-content img {
+  text-align: left;
+  line-height: 1.8;
+  margin: 4px 0;
+}
+
+.map-link {
+  margin-left:2px;
+  display: inline-flex;       /* mantiene icono y texto en la misma línea */
+  align-items: center;        /* centra verticalmente el icono con el texto */
+  gap: 3px;                   /* espacio entre icono y texto */
+  color: #8B5E3C;             /* marrón clásico */
+  text-decoration: underline; /* subrayado sutil */
+  font-family: "Georgia", serif;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.map-link:hover {
+  color: #A27652;
+  text-decoration: none;
+}
+
+.map-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;      /* evita que el icono salte línea */
+}
+
+
+
+.map-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
